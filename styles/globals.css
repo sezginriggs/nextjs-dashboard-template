@@ -25,3 +25,16 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@layer components {
+    
+    /*
+    #__next {
+        @apply h-screen overflow-hidden flex items-center justify-center;
+    }*/
+    /*
+    html,
+    body {
+        @apply h-screen overflow-hidden flex items-center justify-center;
+    }*/
+}

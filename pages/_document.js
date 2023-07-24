@@ -1,7 +1,11 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
+import { Providers } from '@/context/Providers';
+
+
 export default function Document() {
   return (
+    <Providers>
     <Html lang="en">
       <Head />
       <body>
@@ -9,5 +13,6 @@ export default function Document() {
         <NextScript />
       </body>
     </Html>
+    </Providers>
   )
 }
