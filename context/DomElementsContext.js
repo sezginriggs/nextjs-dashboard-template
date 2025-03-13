@@ -28,21 +28,21 @@ const DomElementsContextProvider = (props) => {
 
 
 
-    const toggleSidebar = (data) => {
+    const toggleSidebar = () => {
 
         try {
             console.log('DomElementsContextProvider > toggleSidebar Triggered');
 
-            let {isSidebarHidden} = data;
+            
 
-            console.log("Sidebar isSideBarHidden value: ", data.isSidebarHidden);
+            console.log("Sidebar isSideBarHidden value: ", state.isSidebarHidden);
     
     
             //DISPATCH TO REDUCER
             dispatch({type: 'setSideBar',
             
                     payload: {
-                        isSidebarHidden: !data.isSidebarHidden
+                        isSidebarHidden: !state.isSidebarHidden
                     },
             });
             

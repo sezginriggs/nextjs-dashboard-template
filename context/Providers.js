@@ -1,7 +1,13 @@
 
 'use client';
 
-import DomElementsContextProvider, { useDomElementsContext } from './DomElementsContext';
+import DomElementsContextProvider, { useDomElementsContext } from '@/context/DomElementsContext';
+
+//import dynamic from 'next/dynamic'
+
+//const DomElementsContextProvider = dynamic(() => import('@/context/DomElementsContext'), { ssr: false })
+ 
+
 
 export function Providers({ children }) {
 
